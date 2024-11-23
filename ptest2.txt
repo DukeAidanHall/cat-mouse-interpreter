@@ -1,0 +1,22 @@
+
+size 70 70
+begin
+	cat tom 20 20 north ; //A fan favorite
+	mouse jerry 35 50 east ; 
+	repeat 5
+		move tom ;
+		move jerry ;
+		clockwise tom ;
+		move tom ;
+		clockwise jerry ;
+	end ;
+	move tom 34 ;
+	clockwise jerry ;
+	hole 2 2 ;
+	hole 67 67 ;
+	mouse rapidRodent 55 55 north ; 
+	repeat 7
+		move rapidRodent 5 ;
+	end ;
+	move rapidRodent 1 ;	 
+halt 

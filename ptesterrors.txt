@@ -1,0 +1,25 @@
+    size 20 20
+    begin
+
+    //Creating cats, mouses, and holes for testing
+      cat andrea 15 15 east ;
+      cat bethany 10 10 west ;
+      mouse clarence 7 8 south ;
+      mouse derek 7 11 south ;
+      cat fiona 11 10 west ;
+      hole 5 8 ;
+
+    //Error Set 1: Moving and being placed outside the grid
+      move andrea 30 ; //Moved outside the grid
+      cat erik 30 30 west ;  //Placed outside the grid
+      hole 40 40 ; //Placed outside the grid
+
+    //Error Set 2: Referencing removed variables
+      clockwise andrea ; //Referencing removed from ST andrea
+      clockwise erik ; //Referencing removed from ST erik
+
+    //Error Set 3: Running into each other
+      move fiona ; //Fiona cat moves into bethany cat
+      move clarence 3 ; //Clarence mouse moves into derek mouse
+
+    halt 
